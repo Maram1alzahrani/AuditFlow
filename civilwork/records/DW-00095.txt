@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00095
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Week beginning: 18/05/2026
+Days on: Tue 19/05, Wed 20/05, Thu 21/05, Fri 22/05, Sat 23/05, Sun 24/05
+
+pumps kept going 1 week this period
+
+Signed (foreman): S. Raman
+Countersigned (Engineer's representative): P. Lindqvist

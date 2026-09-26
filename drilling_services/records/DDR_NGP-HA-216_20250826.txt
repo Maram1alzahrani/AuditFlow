@@ -1,0 +1,34 @@
+DAILY DRILLING REPORT
+Report: DDR-216-20250826
+Contract: DDS-2025-118
+Well: NGP-HA-216
+Rig: NG-Rig 47
+Date: 26-Aug-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 12-1/4"
+Status: Operating
+Depth start (m MD): 3867
+Depth end (m MD): 3867
+Circulating hours: 8
+BHA run: 6
+In the hole: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 1
+Back-reaming hours: 6
+Clean-out runs: 1
+
+PART B — BHA RUN RECORD
+Run: 6
+Run first day: 15-Aug-2025
+Run last day: 26-Aug-2025
+Tools in run: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Run circulating hours: 212
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+Signed (Company Representative): H. Suleiman
+Signed (lead directional driller): S. Raman

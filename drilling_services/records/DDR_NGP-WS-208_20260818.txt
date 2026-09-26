@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-208-20260818
+Contract: DDS-2025-118
+Well: NGP-WS-208
+Rig: NG-Rig 44
+Date: 18-Aug-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 17-1/2"
+Status: Operating
+Depth start (m MD): 1720
+Depth end (m MD): 1720
+Circulating hours: 11
+BHA run: 2
+In the hole: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 1
+Back-reaming hours: 7
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 2
+Run first day: 13-Aug-2026
+Run last day: 18-Aug-2026
+Tools in run: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Run circulating hours: 102
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+PART E — LOST IN HOLE
+Lost in hole run: 2
+Lost in hole tool: mud motor
+Circulating hours accumulated on the well: 155
+
+Signed (Company Representative): D. Marchetti
+Signed (lead directional driller): S. Raman

@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00095
+Job: Northern Access Road, Package 4
+Area: S-05 Compound Extension
+Date: 26/02/2026
+
+tracked machine stood idle 11 hours waiting on access
+
+Signed (foreman): M. Al-Harbi
+Countersigned (Engineer's representative): P. Lindqvist

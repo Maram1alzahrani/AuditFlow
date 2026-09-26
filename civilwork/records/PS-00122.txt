@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00122
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Date: 27/05/2026
+
+tracked machine stood idle 3 hours waiting on access
+
+Signed (foreman): J. Pretorius
+Countersigned (Engineer's representative): N. Basri

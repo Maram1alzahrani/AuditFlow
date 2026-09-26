@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00037
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Date: 08/06/2025
+
+tracked machine stood idle 9 hours waiting on access
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): P. Lindqvist

@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00096
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Week beginning: 25/05/2026
+Days on: Mon 25/05, Wed 27/05, Thu 28/05, Fri 29/05, Sat 30/05, Sun 31/05
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): K. Doyle
+Countersigned (Engineer's representative): H. Suleiman

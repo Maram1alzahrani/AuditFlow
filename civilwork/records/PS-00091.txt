@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00091
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Date: 10/02/2026
+
+tracked machine stood idle 9 hours waiting on access
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): P. Lindqvist

@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-203-20260207
+Contract: DDS-2025-118
+Well: NGP-HA-203
+Rig: NG-Rig 44
+Date: 07-Feb-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 8-1/2"
+Status: Operating
+Depth start (m MD): 3890
+Depth end (m MD): 4001
+Circulating hours: 14
+BHA run: 5
+In the hole: MWD collar, density-neutron, drilling jars, gamma tool, real-time link, resistivity tool, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 1 logging engineers, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 5
+Run first day: 07-Feb-2026
+Run last day: 10-Feb-2026
+Tools in run: MWD collar, density-neutron, drilling jars, gamma tool, real-time link, resistivity tool, rotary steerable, survey package
+Run circulating hours: 62
+Metres logged: 365
+Metres reamed: 0
+Radioactive source carried: Yes
+
+PART D — RADIOACTIVE SOURCE HANDLING
+Source run: 5
+Sources handled: density and neutron
+Source handling certified: Yes
+
+Signed (Company Representative): H. Suleiman
+Signed (lead directional driller): M. Farouk

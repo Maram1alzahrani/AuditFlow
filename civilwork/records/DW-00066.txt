@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00066
+Job: Northern Access Road, Package 4
+Area: S-05 Compound Extension
+Week beginning: 22/12/2025
+Days on: Mon 22/12, Tue 23/12, Wed 24/12, Fri 26/12, Sat 27/12, Sun 28/12
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): A. Whitfield

@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00082
+Job: Northern Access Road, Package 4
+Area: S-02 Platform South
+Week beginning: 16/03/2026
+Days on: Mon 16/03, Tue 17/03, Thu 19/03, Sat 21/03, Sun 22/03
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): M. Al-Harbi
+Countersigned (Engineer's representative): P. Lindqvist

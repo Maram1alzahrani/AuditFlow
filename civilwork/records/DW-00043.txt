@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00043
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Week beginning: 01/09/2025
+Days on: Mon 01/09, Tue 02/09, Wed 03/09, Thu 04/09, Fri 05/09, Sat 06/09, Sun 07/09
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): J. Pretorius
+Countersigned (Engineer's representative): H. Suleiman

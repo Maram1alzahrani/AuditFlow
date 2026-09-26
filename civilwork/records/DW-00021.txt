@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00021
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Week beginning: 05/05/2025
+Days on: Mon 05/05, Tue 06/05, Wed 07/05, Thu 08/05, Sat 10/05, Sun 11/05
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): K. Doyle
+Countersigned (Engineer's representative): H. Suleiman

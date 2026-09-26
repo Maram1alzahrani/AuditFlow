@@ -1,0 +1,34 @@
+DAILY DRILLING REPORT
+Report: DDR-029-20260511
+Contract: DDS-2025-118
+Well: NGP-WS-029
+Rig: NG-Rig 14
+Date: 11-May-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 12-1/4"
+Status: Operating
+Depth start (m MD): 3218
+Depth end (m MD): 3352
+Circulating hours: 17
+BHA run: 3
+In the hole: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 3
+Run first day: 05-May-2026
+Run last day: 14-May-2026
+Tools in run: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Run circulating hours: 168
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+Signed (Company Representative): A. Whitfield
+Signed (lead directional driller): T. Okonjo

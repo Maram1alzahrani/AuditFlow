@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-226-20261009
+Contract: DDS-2025-118
+Well: NGP-WS-226
+Rig: NG-Rig 47
+Date: 09-Oct-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 12-1/4"
+Status: Operating
+Depth start (m MD): 2762
+Depth end (m MD): 2938
+Circulating hours: 16
+BHA run: 3
+In the hole: MWD collar, bit and reamer, drilling jars, float sub, hole opener, hydraulics package, real-time link, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 3
+Run first day: 03-Oct-2026
+Run last day: 13-Oct-2026
+Tools in run: MWD collar, bit and reamer, drilling jars, float sub, hole opener, hydraulics package, real-time link, rotary steerable, survey package
+Run circulating hours: 178
+Metres logged: 0
+Metres reamed: 1547
+Radioactive source carried: No
+
+PART E — LOST IN HOLE
+Lost in hole run: 3
+Lost in hole tool: rotary steerable
+Circulating hours accumulated on the well: 119
+
+Signed (Company Representative): P. Lindqvist
+Signed (lead directional driller): J. Pretorius

@@ -1,0 +1,34 @@
+DAILY DRILLING REPORT
+Report: DDR-024-20251006
+Contract: DDS-2025-118
+Well: NGP-BD-024
+Rig: NG-Rig 14
+Date: 06-Oct-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 17-1/2"
+Status: Standby
+Depth start (m MD): 1459
+Depth end (m MD): 1459
+Circulating hours: 3
+BHA run: 3
+In the hole: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 3
+Run first day: 06-Oct-2025
+Run last day: 13-Oct-2025
+Tools in run: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Run circulating hours: 97
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+Signed (Company Representative): H. Suleiman
+Signed (lead directional driller): T. Okonjo

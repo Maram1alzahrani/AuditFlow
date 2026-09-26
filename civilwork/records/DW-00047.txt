@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00047
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Week beginning: 22/09/2025
+Days on: Mon 22/09, Tue 23/09, Wed 24/09, Thu 25/09, Fri 26/09, Sat 27/09
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): T. Okonjo
+Countersigned (Engineer's representative): H. Suleiman

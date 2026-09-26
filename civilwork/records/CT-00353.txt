@@ -1,0 +1,10 @@
+COMPACTION TEST CERTIFICATE
+Ticket: CT-00353
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Date: 27/06/2026
+
+brought in 262 cube of fill, compacted in layers
+
+Signed (foreman): J. Pretorius
+Countersigned (Engineer's representative): H. Suleiman

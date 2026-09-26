@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00028
+Job: Northern Access Road, Package 4
+Area: S-05 Compound Extension
+Week beginning: 23/06/2025
+Days on: Mon 23/06, Tue 24/06, Thu 26/06, Sat 28/06, Sun 29/06
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): M. Al-Harbi
+Countersigned (Engineer's representative): P. Lindqvist

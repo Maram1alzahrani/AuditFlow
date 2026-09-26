@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00101
+Job: Northern Access Road, Package 4
+Area: S-01 Platform North
+Date: 26/03/2026
+
+tracked machine stood idle 2 hours waiting on access
+
+Signed (foreman): M. Al-Harbi
+Countersigned (Engineer's representative): P. Lindqvist

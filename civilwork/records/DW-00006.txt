@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00006
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Week beginning: 17/02/2025
+Days on: Mon 17/02, Tue 18/02, Thu 20/02, Fri 21/02, Sun 23/02
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): P. Lindqvist

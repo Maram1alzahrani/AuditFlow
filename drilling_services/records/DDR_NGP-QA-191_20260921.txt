@@ -1,0 +1,38 @@
+DAILY DRILLING REPORT
+Report: DDR-191-20260921
+Contract: DDS-2025-118
+Well: NGP-QA-191
+Rig: NG-Rig 41
+Date: 21-Sep-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 17-1/2"
+Status: Operating
+Depth start (m MD): 1937
+Depth end (m MD): 2111
+Circulating hours: 21
+BHA run: 2
+In the hole: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers
+Gyro surveys: 2
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 2
+Run first day: 14-Sep-2026
+Run last day: 22-Sep-2026
+Tools in run: MWD collar, circulating sub, drilling jars, mud motor, real-time link, stabiliser string
+Run circulating hours: 135
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+PART C — GYRO SURVEY RECORD
+Gyro surveys taken: 2
+Surveyed section: 17-1/2"
+
+Signed (Company Representative): N. Basri
+Signed (lead directional driller): M. Farouk

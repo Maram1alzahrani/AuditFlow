@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00128
+Job: Northern Access Road, Package 4
+Area: S-02 Platform South
+Date: 30/06/2026
+
+tracked machine stood idle 4 hours waiting on access
+
+Signed (foreman): J. Pretorius
+Countersigned (Engineer's representative): H. Suleiman

@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00099
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Date: 23/03/2026
+
+tracked machine stood idle 11 hours waiting on access
+
+Signed (foreman): S. Raman
+Countersigned (Engineer's representative): P. Lindqvist

@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-151-20260303
+Contract: DDS-2025-118
+Well: NGP-WS-151
+Rig: NG-Rig 35
+Date: 03-Mar-2026
+
+PART A — OPERATIONS SUMMARY
+Hole section: 8-1/2"
+Status: Operating
+Depth start (m MD): 3114
+Depth end (m MD): 3251
+Circulating hours: 18
+BHA run: 5
+In the hole: MWD collar, drilling jars, gamma tool, real-time link, resistivity tool, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 1 logging engineers, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 5
+Run first day: 03-Mar-2026
+Run last day: 15-Mar-2026
+Tools in run: MWD collar, drilling jars, gamma tool, real-time link, resistivity tool, rotary steerable, survey package
+Run circulating hours: 227
+Metres logged: 1451
+Metres reamed: 0
+Radioactive source carried: Yes
+
+PART D — RADIOACTIVE SOURCE HANDLING
+Source run: 5
+Sources handled: density and neutron
+Source handling certified: Yes
+
+Signed (Company Representative): A. Whitfield
+Signed (lead directional driller): R. Vasquez

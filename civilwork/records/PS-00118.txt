@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00118
+Job: Northern Access Road, Package 4
+Area: S-05 Compound Extension
+Date: 21/05/2026
+
+tracked machine stood idle 2 hours waiting on access
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): P. Lindqvist

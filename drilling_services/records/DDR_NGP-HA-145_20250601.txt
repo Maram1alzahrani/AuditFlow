@@ -1,0 +1,38 @@
+DAILY DRILLING REPORT
+Report: DDR-145-20250601
+Contract: DDS-2025-118
+Well: NGP-HA-145
+Rig: NG-Rig 35
+Date: 01-Jun-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 26"
+Status: Operating
+Depth start (m MD): 271
+Depth end (m MD): 543
+Circulating hours: 17
+BHA run: 1
+In the hole: MWD collar, drilling jars, mud motor, real-time link
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers
+Gyro surveys: 2
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 1
+Run first day: 31-May-2025
+Run last day: 03-Jun-2025
+Tools in run: MWD collar, drilling jars, mud motor, real-time link
+Run circulating hours: 65
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+PART C — GYRO SURVEY RECORD
+Gyro surveys taken: 2
+Surveyed section: 26"
+
+Signed (Company Representative): A. Whitfield
+Signed (lead directional driller): R. Vasquez

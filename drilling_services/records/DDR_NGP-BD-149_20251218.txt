@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-149-20251218
+Contract: DDS-2025-118
+Well: NGP-BD-149
+Rig: NG-Rig 35
+Date: 18-Dec-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 6"
+Status: Operating
+Depth start (m MD): 4936
+Depth end (m MD): 5040
+Circulating hours: 17
+BHA run: 6
+In the hole: MWD collar, drilling jars, gamma tool, mud motor, real-time link
+Crew on tour: 2 directional hands, 1 night man, 1 logging engineers, 2 MWD engineers
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 6
+Run first day: 15-Dec-2025
+Run last day: 25-Dec-2025
+Tools in run: MWD collar, drilling jars, gamma tool, mud motor, real-time link
+Run circulating hours: 188
+Metres logged: 891
+Metres reamed: 0
+Radioactive source carried: No
+
+PART E — LOST IN HOLE
+Lost in hole run: 6
+Lost in hole tool: mud motor
+Circulating hours accumulated on the well: 227
+
+Signed (Company Representative): N. Basri
+Signed (lead directional driller): R. Vasquez

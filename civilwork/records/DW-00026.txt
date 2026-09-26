@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00026
+Job: Northern Access Road, Package 4
+Area: S-02 Platform South
+Week beginning: 16/06/2025
+Days on: Mon 16/06, Tue 17/06, Wed 18/06, Fri 20/06, Sun 22/06
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): S. Raman
+Countersigned (Engineer's representative): A. Whitfield

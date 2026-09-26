@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00010
+Job: Northern Access Road, Package 4
+Area: S-03 Access Road
+Date: 07/03/2025
+
+tracked machine stood idle 6 hours waiting on access
+
+Signed (foreman): K. Doyle
+Countersigned (Engineer's representative): N. Basri

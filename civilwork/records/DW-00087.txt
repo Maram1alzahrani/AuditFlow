@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00087
+Job: Northern Access Road, Package 4
+Area: S-04 Drainage Corridor
+Week beginning: 27/04/2026
+Days on: Mon 27/04, Tue 28/04, Wed 29/04, Thu 30/04, Fri 01/05, Sat 02/05, Sun 03/05
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): K. Doyle
+Countersigned (Engineer's representative): H. Suleiman

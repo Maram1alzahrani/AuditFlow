@@ -1,0 +1,39 @@
+DAILY DRILLING REPORT
+Report: DDR-023-20250820
+Contract: DDS-2025-118
+Well: NGP-QA-023
+Rig: NG-Rig 14
+Date: 20-Aug-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 12-1/4"
+Status: Operating
+Depth start (m MD): 1917
+Depth end (m MD): 2090
+Circulating hours: 15
+BHA run: 3
+In the hole: MWD collar, bit and reamer, drilling jars, float sub, hole opener, hydraulics package, real-time link, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 3
+Run first day: 20-Aug-2025
+Run last day: 28-Aug-2025
+Tools in run: MWD collar, bit and reamer, drilling jars, float sub, hole opener, hydraulics package, real-time link, rotary steerable, survey package
+Run circulating hours: 162
+Metres logged: 0
+Metres reamed: 1227
+Radioactive source carried: No
+
+PART E — LOST IN HOLE
+Lost in hole run: 3
+Lost in hole tool: MWD collar
+Circulating hours accumulated on the well: 189
+
+Signed (Company Representative): P. Lindqvist
+Signed (lead directional driller): J. Pretorius

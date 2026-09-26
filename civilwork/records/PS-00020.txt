@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00020
+Job: Northern Access Road, Package 4
+Area: S-02 Platform South
+Date: 15/04/2025
+
+tracked machine stood idle 2 hours waiting on access
+
+Signed (foreman): M. Al-Harbi
+Countersigned (Engineer's representative): P. Lindqvist

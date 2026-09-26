@@ -1,0 +1,34 @@
+DAILY DRILLING REPORT
+Report: DDR-078-20251212
+Contract: DDS-2025-118
+Well: NGP-QA-078
+Rig: NG-Rig 23
+Date: 12-Dec-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 6"
+Status: Operating
+Depth start (m MD): 4794
+Depth end (m MD): 4911
+Circulating hours: 17
+BHA run: 6
+In the hole: MWD collar, drilling jars, gamma tool, mud motor, real-time link
+Crew on tour: 2 directional hands, 1 night man, 1 logging engineers, 2 MWD engineers
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 6
+Run first day: 09-Dec-2025
+Run last day: 16-Dec-2025
+Tools in run: MWD collar, drilling jars, gamma tool, mud motor, real-time link
+Run circulating hours: 120
+Metres logged: 558
+Metres reamed: 0
+Radioactive source carried: No
+
+Signed (Company Representative): H. Suleiman
+Signed (lead directional driller): J. Pretorius

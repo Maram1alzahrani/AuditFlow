@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00057
+Job: Northern Access Road, Package 4
+Area: S-04 Drainage Corridor
+Week beginning: 03/11/2025
+Days on: Mon 03/11, Tue 04/11, Wed 05/11, Fri 07/11, Sat 08/11, Sun 09/11
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): R. Vasquez
+Countersigned (Engineer's representative): A. Whitfield

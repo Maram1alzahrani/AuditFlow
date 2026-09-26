@@ -1,0 +1,11 @@
+DEWATERING LOG
+Ticket: DW-00106
+Job: Northern Access Road, Package 4
+Area: S-02 Platform South
+Week beginning: 29/06/2026
+Days on: Mon 29/06, Tue 30/06, Wed 01/07, Thu 02/07, Fri 03/07, Sat 04/07, Sun 05/07
+
+wellpoints running, 1 week on the dewatering
+
+Signed (foreman): J. Pretorius
+Countersigned (Engineer's representative): H. Suleiman

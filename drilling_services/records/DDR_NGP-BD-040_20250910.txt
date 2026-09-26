@@ -1,0 +1,34 @@
+DAILY DRILLING REPORT
+Report: DDR-040-20250910
+Contract: DDS-2025-118
+Well: NGP-BD-040
+Rig: NG-Rig 17
+Date: 10-Sep-2025
+
+PART A — OPERATIONS SUMMARY
+Hole section: 12-1/4"
+Status: Operating
+Depth start (m MD): 2915
+Depth end (m MD): 3120
+Circulating hours: 14
+BHA run: 6
+In the hole: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Crew on tour: 2 directional hands, 1 night man, 2 MWD engineers, 1 performance engineer
+Gyro surveys: 0
+Pressure points: 0
+Wiper trips: 0
+Back-reaming hours: 0
+Clean-out runs: 0
+
+PART B — BHA RUN RECORD
+Run: 6
+Run first day: 08-Sep-2025
+Run last day: 12-Sep-2025
+Tools in run: MWD collar, bit and reamer, drilling jars, float sub, hydraulics package, real-time link, rotary steerable, survey package
+Run circulating hours: 73
+Metres logged: 0
+Metres reamed: 0
+Radioactive source carried: No
+
+Signed (Company Representative): D. Marchetti
+Signed (lead directional driller): R. Vasquez

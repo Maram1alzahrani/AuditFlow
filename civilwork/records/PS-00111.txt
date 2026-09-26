@@ -1,0 +1,10 @@
+PLANT STANDING RECORD
+Ticket: PS-00111
+Job: Northern Access Road, Package 4
+Area: S-05 Compound Extension
+Date: 17/04/2026
+
+tracked machine stood idle 4 hours waiting on access
+
+Signed (foreman): T. Okonjo
+Countersigned (Engineer's representative): H. Suleiman
