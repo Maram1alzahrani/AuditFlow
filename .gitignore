@@ -6,5 +6,6 @@ __pycache__/
 .coverage
 htmlcov/
 
-artifacts/ocr/images/
-artifacts/ocr/debug/
+artifacts/
+audit_working_bundle.zip
+*_audit_package.zip
