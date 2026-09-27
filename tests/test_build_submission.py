@@ -10,6 +10,18 @@ sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 import build_submission as builder  # noqa: E402
 
 
+def test_source_evidence_is_rebuilt_from_raw_records():
+    builder.parse_source_evidence(PROJECT_ROOT)
+    civil = pd.read_csv(
+        PROJECT_ROOT / "artifacts/parsed/civil_records.csv"
+    )
+    drilling = pd.read_csv(
+        PROJECT_ROOT / "artifacts/parsed/drilling_reports.csv"
+    )
+    assert len(civil) == 2169
+    assert len(drilling) == 8151
+
+
 def test_final_submission_has_exact_template_coverage_and_schema():
     submission, summary = builder.build_submission(PROJECT_ROOT)
     template = pd.read_csv(
@@ -47,4 +59,3 @@ def test_final_submission_types_and_flag_consistency():
     assert submission.loc[
         submission["flagged"].eq(1), "error_category"
     ].ne("").all()
-

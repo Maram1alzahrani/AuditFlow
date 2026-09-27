@@ -571,6 +571,15 @@ def audit_applications(
         apps[apps["application_date_dt"].ge(A3_ISSUED)]
         .sort_values(["application_date_dt", "application_no"]).iloc[0]["application_no"]
     )
+    adjustment_target_date = apps.loc[
+        apps["application_no"].eq(adjustment_target), "application_date_dt"
+    ].iloc[0]
+    same_day_adjustment_candidates = set(
+        apps.loc[
+            apps["application_date_dt"].eq(adjustment_target_date),
+            "application_no",
+        ]
+    )
 
     expected_totals: dict[str, Decimal] = {}
     expected_retentions: dict[str, Decimal] = {}
@@ -623,11 +632,12 @@ def audit_applications(
             if (app.application_date_dt - app.period_to_dt).days > 21:
                 categories.add("DATE")
 
+        confidence = "0.90" if app.application_no in same_day_adjustment_candidates else "0.99"
         output.append({
             "invoice_id": app.application_no, "flagged": 1 if categories else 0,
             "error_category": "|".join(sorted(categories)),
             "expected_total_cents": cents(net), "billed_total_cents": cents(D(app.net_payable)),
-            "confidence": "0.99", "expected_application_total": money_text(total),
+            "confidence": confidence, "expected_application_total": money_text(total),
             "expected_adjustment": money_text(adjustment), "expected_retention": money_text(retention),
             "expected_retention_released": money_text(release), "expected_net_payable": money_text(net),
             "billed_net_payable": money_text(D(app.net_payable)), "details": " | ".join(details),

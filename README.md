@@ -1,137 +1,144 @@
 # Invoice Audit Exercise — Level 2
 
-Two contractors bill against two long-running contracts: a civil engineering
-term subcontract and a directional drilling services contract. Both contracts
-were amended while they ran. Both contractors invoice monthly against site
-paperwork. Some of those invoices are wrong — a rate that was superseded, a
-quantity beyond what the record supports, an uplift where the contract
-suspends it, an adjustment omitted or taken early, a charge billed twice.
+A reproducible, contract-first audit of 2,806 invoices across a civil works
+subcontract and a directional drilling services contract. The solution parses
+10,320 free-text records, applies the contracts and their later instruments in
+date order, recalculates every payable line with contract-specific rounding,
+and writes the completed `submission.csv` in the supplied template order.
 
-Your job is to audit **every** invoice under both contracts and say which ones
-are wrong.
+## Result
 
-## What you have
+| Portfolio | Invoices | Flagged | Clean |
+|---|---:|---:|---:|
+| Civil works | 900 | 77 | 823 |
+| Directional drilling | 1,906 | 119 | 1,787 |
+| **Total** | **2,806** | **196** | **2,610** |
 
+The flagged rate is 6.99%, within the exercise's stated expectation of 5–8%.
+That is a reasonableness check, not a tuning target: no detection threshold was
+chosen to force this result.
+
+There is no labelled answer set, so this repository does not claim measured
+precision, recall, F1, or accuracy. Performance is reported through complete
+coverage, deterministic reconciliation, evidence-level traces, contract
+boundary tests, and explicit uncertainty. See [REPORT.md](REPORT.md).
+
+## Quick start
+
+Prerequisites: Python 3.11 and Tesseract OCR. The final audit rebuilds its
+structured evidence from the repository's raw `.txt` records; OCR images and
+intermediate OCR outputs are not required to reproduce `submission.csv`.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python scripts/build_submission.py
+python -m pytest -q
 ```
-civilwork/
-  contract/CW-2025-0417-CIV.pdf           43 scanned pages, no text layer
-  guidelines/INVOICE_AUDIT_GUIDELINES.md  the 12 checks, in order
-  invoices/applications.csv               900 payment applications
-  invoices/application_lines.csv          7,746 lines
-  records/                                2,169 site records (.txt)
 
-drilling_services/
-  contract/DDS-2025-118.pdf               42 scanned pages, no text layer
-  guidelines/INVOICE_AUDIT_GUIDELINES.md  the same 12 checks, for this contract
-  invoices/invoices.csv                   1,906 invoices
-  invoices/invoice_lines.csv              91,244 lines
-  records/                                8,151 daily drilling reports (.txt)
+Expected final checks:
 
-submission_template.csv                   2,806 rows — one per invoice
+```text
+Final rows: 2806
+Civil rows: 900
+Drilling rows: 1906
+Flagged: 196
+Clean: 2610
+Coverage: complete; no missing, unexpected, or duplicate IDs
 ```
 
-**The contracts are scans.** Each PDF is a photograph of a paper contract:
-skewed pages, uneven illumination, scanner grain, JPEG artefacts, and no text
-layer at all. Getting the terms out of them is the first part of the task, not
-a preliminary to it. Everything you need to price a line is in there —
-schedules of rates, the supplements and amendments that change them, the
-definitions that decide what is chargeable.
+The generated submission is written to `submission.csv`. Detailed generated
+traces are written under `artifacts/audit/` and are intentionally ignored by
+Git.
 
-**The records are free text.** A site record or a daily report is written the
-way the site writes it, not the way the contract does. The same contracted
-item is described several ways, and a record rarely quotes an item code.
-Establishing which priced item a charge belongs to, and which record evidences
-it, is part of the task.
+## Pipeline
 
-**No answers are included.** There is no development set and no labelled
-sample. Calibrate against the contract itself: if your reading of a clause
-reprices invoices that reconcile exactly as billed, your reading is probably
-wrong.
+```text
+Scanned contracts ──> multi-pass OCR + visual verification ──> encoded rules
+Raw site records ───> civil evidence parser ──────────────────┐
+Raw drilling reports -> drilling evidence parser ─────────────┤
+Invoice headers + lines ───────────────────────────────────────┤
+                                                              v
+                                  civil and drilling audit engines
+                                                              |
+                                                              v
+                                  template-ordered submission.csv
+```
 
-## The data
+The pricing engines use `Decimal`, not binary floating point. Civil rates use
+half-even rounding for index/FX conversions, half-up rounding for the final
+built-up rate, and downward rounding for retention. Drilling rounds half-even
+at every contractual pricing step.
 
-Both invoice files carry one row per invoice and one row per line in the
-`_lines` file, joined on the invoice number (`application_no` for civil works,
-`invoice_no` for drilling). Line rows carry the reference of the record that
-evidences them (`record_ref`, `report_ref`); those references are the join
-into `records/`.
+## Repository structure
 
-Money in the CSVs is printed in the contract's own currency with two decimal
-places — SAR for the civil works subcontract, USD for the drilling contract.
-**The submission file takes integer minor units**: multiply by 100, so
-`265123.89` is `26512389`. There are no fractional amounts in a submission.
+```text
+civilwork/                         Civil contract, invoices, and site records
+drilling_services/                 Drilling contract, invoices, and DDR records
+scripts/ocr_contract.py            Multi-pass contract OCR and review metadata
+scripts/parse_civil_records.py     Free-text civil evidence parser
+scripts/parse_drilling_reports.py  DDR parser and Appendix G terminology map
+scripts/audit_civil.py             Civil pricing and evidence audit
+scripts/audit_drilling.py          Drilling pricing and evidence audit
+scripts/build_submission.py        End-to-end rebuild and coverage validation
+tests/                             Contract boundary and full-data controls
+prompts/                           Versioned AI prompt and iteration log
+DECISION_LOG.md                    Assumptions and ambiguity resolutions
+REPORT.md                          Method, findings, and failure analysis
+submission.csv                     Completed 2,806-row deliverable
+```
 
-The figure you are judging on is the invoice total as billed:
-`application_total` for a civil works application, `invoice_total` for a
-drilling invoice.
+## Audit coverage
 
-## The task
+The engines implement, among other rules:
 
-Apply the twelve checks in `INVOICE_AUDIT_GUIDELINES.md` to every invoice
-under both contracts, and record the outcome for each one in a **single
-submission file**. Start from `submission_template.csv`, which already lists
-every invoice id in the exercise, and fill it in.
+- instrument issue dates versus effective dates, including retroactive single
+  adjustments;
+- indexed, monthly, substituted, and foreign-currency rates;
+- ordered zone, ground, class, section, uplift, rebate, and discount factors;
+- two distinct contractual rounding regimes;
+- evidence existence, type, date, area, signature, and supported quantity;
+- daily caps, minimums, exclusions, tolerances, once-per-run and once-per-well
+  events;
+- duplicate claims and reused weekly civil records;
+- civil retention and release, drilling invoice discount, and VAT;
+- invoice identity, period, submission window, arithmetic, and final total.
 
-| column | meaning |
-|---|---|
-| `invoice_id` | the invoice this row is about — leave the ids as they are |
-| `flagged` | `1` if you believe the invoice is wrong, `0` if you believe it is correct |
-| `error_category` | your own short label for what is wrong; free text, blank when not flagged |
-| `expected_total_cents` | what you believe the invoice should have totalled, in minor units |
-| `billed_total_cents` | what it actually totalled, in minor units |
-| `confidence` | how sure you are of this row, between 0 and 1 |
+## Main outputs
 
-Return all 2,806 rows in one file. A `0` is a claim, not a blank: it says you
-audited the invoice and found nothing. Rows you cannot price are still rows —
-flag them if you believe they are wrong, give your confidence honestly, and
-say in your report what you could not determine.
+- `submission.csv`: the required final file.
+- `artifacts/audit/civil_line_audit.csv`: civil line evidence and pricing trace.
+- `artifacts/audit/civil_application_audit.csv`: civil application reconciliation.
+- `artifacts/audit/drilling_line_audit.csv`: drilling line evidence and pricing trace.
+- `artifacts/audit/drilling_invoice_audit.csv`: drilling invoice reconciliation.
+- `artifacts/audit/*_summary.json`: reproducibility controls and category counts.
 
-Between 5% and 8% of the invoices are wrong. Some of the ones that look odd
-are correct, and are there to be left alone.
+## Testing strategy
 
-## How it is scored
+The test suite combines unit tests for contractual boundaries with full-data
+regression controls. It checks rounding, effective-date transitions, indexed
+rates, standby factor ordering, evidence tolerances, lost-in-hole depreciation,
+civil quantity bands, extension-period ground treatment, concurrent uplifts,
+retroactive adjustments, exact template schema, row order, type integrity, and
+complete ID coverage.
 
-* **Detection.** Precision, recall and F1 on `flagged`, overall and by
-  severity.
-* **Cost.** `5 × false negatives + 1 × false positives`, lower is better. A
-  missed error costs five times what a needless flag costs, and flagging
-  everything costs more than flagging nothing.
-* **Amounts.** Where you flag an invoice, whether `expected_total_cents` is
-  the figure the contract actually supports.
-* **Calibration.** Your stated `confidence` against your precision in each
-  band. A confidently wrong extraction is worse than a flagged uncertainty: an
-  extracted rate that is wrong propagates silently into every invoice that
-  touches it, while a stated doubt costs a reviewer a few minutes.
-* **Category.** Whether your `error_category` separates the kinds of error you
-  found — your own vocabulary is fine, consistency is what matters.
+## AI assistance disclosure
 
-## Ground rules
+AI assistance was used for OCR workflow design, rule transcription review,
+parser and audit-engine implementation, test design, and documentation. Every
+material result is produced by deterministic code and was rerun locally against
+the supplied repository. Prompt iterations and constraints are versioned in
+[`prompts/`](prompts/). Ambiguous readings are disclosed in
+[DECISION_LOG.md](DECISION_LOG.md).
 
-- The data is synthetic. There is no real contractor, well or site.
-- Everything you need is in this repository. There is nothing to look up
-  externally.
-- Where the guidelines and the contract differ, the contract governs — and the
-  difference is worth reporting.
-- If a clause is genuinely ambiguous, it may well be. Record your reading in
-  the decision log and move on; do not spend the budget on it.
+## Original exercise summary
 
-## AI assistance
+The supplied exercise contains two amended contracts: 900 civil payment
+applications with 7,746 lines and 2,169 site records, and 1,906 drilling
+invoices with 91,244 lines and 8,151 daily reports. The required submission has
+one row per invoice with a flag, error category, expected and billed totals in
+minor units, and confidence. The contract governs wherever it differs from the
+guidelines.
 
-Using AI assistance is permitted and expected. It must be disclosed. Include
-your prompts as versioned files in your repository, so we can see how you
-worked and not only what you produced.
-
-## Deliverables
-
-1. **A runnable repository.** We should be able to clone it, follow your
-   README, and reproduce your submission file. Pin your dependencies.
-2. **`submission.csv`**, in the template format, covering all 2,806 invoices.
-3. **A short report**: how the approach performs, and an error analysis
-   grouped by *failure type* — the three or four systematic ways your approach
-   goes wrong, with an example of each, rather than a list of individual
-   misses.
-4. **Your prompts, as versioned files.** If you iterated on a prompt, we would
-   like to see that it was iterated on.
-5. **A one-page decision log**: the assumptions you made, the ambiguities you
-   found and could not resolve, and what you decided about each. If you read a
-   clause two ways and had to pick one, that belongs here.

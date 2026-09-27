@@ -12,6 +12,8 @@ import pandas as pd
 
 import audit_civil
 import audit_drilling
+import parse_civil_records
+import parse_drilling_reports
 
 
 SUBMISSION_COLUMNS = [
@@ -22,6 +24,45 @@ SUBMISSION_COLUMNS = [
     "billed_total_cents",
     "confidence",
 ]
+
+
+def parse_source_evidence(root: Path) -> None:
+    """Rebuild structured evidence from the repository's raw text records."""
+    output_dir = root / "artifacts/parsed"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    civil_files = sorted((root / "civilwork/records").glob("*.txt"))
+    drilling_files = sorted(
+        (root / "drilling_services/records").glob("*.txt")
+    )
+    if not civil_files or not drilling_files:
+        raise ValueError("Raw civil or drilling evidence files are missing")
+
+    civil_records = [
+        parse_civil_records.parse_record(path) for path in civil_files
+    ]
+    civil_summary = parse_civil_records.build_summary(civil_records)
+    parse_civil_records.write_csv(
+        civil_records, output_dir / "civil_records.csv"
+    )
+    (output_dir / "civil_record_parse_summary.json").write_text(
+        json.dumps(civil_summary, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    drilling_reports = [
+        parse_drilling_reports.parse_report(path) for path in drilling_files
+    ]
+    drilling_summary = parse_drilling_reports.build_summary(
+        drilling_reports
+    )
+    parse_drilling_reports.write_csv(
+        drilling_reports, output_dir / "drilling_reports.csv"
+    )
+    (output_dir / "drilling_report_parse_summary.json").write_text(
+        json.dumps(drilling_summary, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
 def run_civil(root: Path) -> pd.DataFrame:
@@ -138,6 +179,7 @@ def build_submission(root: Path) -> tuple[pd.DataFrame, dict[str, Any]]:
     if list(template.columns) != SUBMISSION_COLUMNS:
         raise ValueError("Unexpected submission template schema")
 
+    parse_source_evidence(root)
     civil = run_civil(root)
     drilling = run_drilling(root)
     combined = pd.concat([civil, drilling], ignore_index=True)
